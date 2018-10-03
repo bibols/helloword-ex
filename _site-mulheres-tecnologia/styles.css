@@ -1,26 +1,89 @@
-.jornal {
--webkit-column-count: 3;
--moz-column-count: 3;
-    column-count: 3;
--webkit-column-gap: 40px;
--moz-column-gap: 40px;
-    column-gap: 40px;
--webkit-column-rule: 1px solid lightblue;
--moz-column-rule: 1px solid lightblue;
-    column-rule: 1px solid lightblue;
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+/*** colunas ***/
+
+    .jornal {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+        -webkit-column-gap: 40px;
+        -moz-column-gap: 40px;
+        column-gap: 40px;
+        -webkit-column-rule: 1px solid #535d66;
+        -moz-column-rule: 1px solid #535d66;
+        column-rule: 1px solid #535d66;
+    }
+
+/*** navegação menu ***/
+
+    ul {
+        list-style-type: none;
+        margin-bottom: 20px;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+    
+    li { float: left; }
+    
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+    li a:hover { background-color: #7e8a97; } 
+
+/*** títulos-cabeçalhos ***/
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
 }
 
-div.header {
-background-color: #000000; color: white;
-padding: 10px;
-font-size: 40px;
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
 }
 
-div.card {
-width: 250px;
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-0 6px 20px 0 rgba(0, 0, 0, 0.19); text-align: center;
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
 }
 
-div.container { padding: 10px;
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #535d66; 
 }
+
+
+/*** efx image shadow ***/
+
+    div.header {
+        background-color: #535d66;
+        padding: 10px;
+        font-size: 40px;
+        color: #fff;
+    }
+
+    div.card {
+        width: 380px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        text-align: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    div.container {
+        padding: 10px;
+    }
+
+    div.header img {
+        max-width: 360px
+    }
